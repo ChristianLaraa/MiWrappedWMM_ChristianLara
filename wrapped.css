@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .logo img {
@@ -128,17 +129,27 @@ body {
     max-width: 800px; /* Ancho máximo */
 }
 
+.cruzzi {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
 .conciertos h1 {
     font-family: 'Novecento WideBold', sans-serif;
     font-size: 2.5rem; /* Tamaño de fuente más grande */
-    margin-bottom: 15px; /* Espacio debajo del título */
+    margin-bottom: 25px; /* Espacio debajo del título */
 }
 
 .conciertos h2 {
     font-family: 'Novecento WideBold', sans-serif;
     font-size: 1.5rem; /* Tamaño de fuente más pequeño */
     margin-bottom: 20px; /* Espacio debajo del subtítulo */
-    color: rgb(196, 203, 225); /* Color del subtítulo */
+    color: rgb(223, 122, 27); /* Color del subtítulo */
+}
+.cruzzi b {
+    color: #ffffff;
 }
 
 .gallery {
@@ -162,6 +173,165 @@ body {
 
 .gallery-item:hover img {
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.aquihay {
+    width: 100%;
+    
+    height: auto;
+    align-items: center;
+}
+.aquihay h2 {
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(223, 122, 27);
+    text-align: center;
+    margin: 40px 0;
+}
+.aquihay b {
+    color: #ffffff;
+}
+.tino {
+    width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+.tino h2 {
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(223, 122, 27);
+    text-align: center;
+    margin: 40px 0;
+}
+.tino b {
+    color: #ffffff;
+}
+.deportes {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 460px; /* Ajusta la altura según tus necesidades */
+    margin-top: 17rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.containerGallery {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.block {
+    flex: 0 0 auto;
+    position: relative;
+    width: 580px;
+    height: 460px;
+    margin: 10px 20px; /* Ajusta los márgenes según tus necesidades */
+}
+
+.block h4 {
+    position: flex;
+    font-family: "Novecento WideBold";
+    font-weight: lighter;
+    font-size: 60px;
+    color: #fff;
+    bottom: 0;
+    right: 0; /* Ajusta la posición del texto según tus necesidades */
+}
+
+.block-1 {
+    background: url(cruzz.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url(cruzz.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url(cruzz.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url(cruzz.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url(cruzzi.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin-right: 2rem;
+    transition: background-color 0.3s ease;
+}
+.scroll-btn:hover {
+    background-color: #555;
+}
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: border-width 0.3s ease, transform 0.3s ease;
+    
+}
+
+.arrow-left {
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.arrow-right {
+    border-width: 15px 25px 15px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.scroll-btn.prev .arrow-left {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.scroll-btn.next .arrow-right {
+    transform: translate(-50%, -50%) rotate(180deg);
 }
 
 @media (max-width: 768px) {
