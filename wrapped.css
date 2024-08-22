@@ -33,6 +33,11 @@ body {
     height: auto;
 }
 
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
 .nav-menu ul {
     display: flex;
     gap: 30px; /* Aumenta la separación entre los elementos del menú */
@@ -93,6 +98,11 @@ body {
     margin-bottom: 15px; 
 }
 
+.profile-pic:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 .text-content h1 {
     padding: 0;
     font-family: 'Novecento WideBold', sans-serif;
@@ -107,7 +117,52 @@ body {
     color: rgb(223, 122, 27);
 }
 
+.conciertos {
+    margin-top: 5rem;
+    color: #ffffff; /* Texto blanco */
+    padding: 20px; 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-align: center; /* Centrar el texto */
+    margin: 40px auto; /* Espacio superior e inferior */
+    max-width: 800px; /* Ancho máximo */
+}
 
+.conciertos h1 {
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.conciertos h2 {
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    margin-bottom: 20px; /* Espacio debajo del subtítulo */
+    color: rgb(196, 203, 225); /* Color del subtítulo */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta automáticamente */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 10px; /* Espacio interno */
+}
+
+.gallery-item {
+    overflow: hidden; /* Ocultar contenido que se sale */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.gallery-item img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
 
 @media (max-width: 768px) {
     .main-header {
