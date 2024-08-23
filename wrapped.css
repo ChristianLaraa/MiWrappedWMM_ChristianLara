@@ -258,11 +258,16 @@ body {
 .textDep {
     color: #ffffff;
     font-size: 1rem;
-    font-family: 'Amazon Ember Regular', sans-serif;
+    font-family: "Novecento WideBold", sans-serif;
     text-align: center;
-    letter-spacing: 1.5px;
 }
-.chart-containerDep {
+.textDep b {
+    color: rgb(223, 122, 27);
+    font-size: 1rem;
+    font-family: "Novecento WideBold", sans-serif;
+    text-align: center;
+}
+.chart-containerDep{
     padding: 0rem;
     gap: 8rem;
     margin-top: 0rem;
@@ -297,6 +302,41 @@ body {
     text-align: center;
     font-size: 2.5rem;
 }
+.medios h3{
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(223, 122, 27); 
+    text-align: center;
+    margin: 40px 0;
+}
+.top-list li {
+    color: #ffffff;
+    font-family: 'Amazon Ember Regular', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+.top-list li:hover {
+    background-color: rgba(255, 111, 0, 0.2); /* Usa el color de fondo del navbar */
+    cursor: pointer;
+}
+.chart-containerEnt {
+    padding: 0rem;
+    gap: 8rem;
+    margin-top: 0rem;
+    margin-left: 9rem;
+    width: 300px;
+    align-items: center;
+    margin: 3rem auto;
+}
+.chart-containerEnt h2{
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(223, 122, 27);
+    text-align: center;
+    margin: 40px 0;
+}
 .cultura {
     width: 100%;
     height: auto;
@@ -311,6 +351,74 @@ body {
     text-align: center;
     font-size: 2.5rem;
 }
+.events-container {
+    max-width: 600px;
+    margin-top: 3rem;;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.events-container h2 {
+    font-family: "Novecento WideBold", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 111, 0);
+}
+
+#events-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#events-list li {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Novecento WideBold", sans-serif;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    position: relative;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#events-list li h3 {
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+#events-list li p {
+    margin: 5px 0;
+}
+
+button.toggle-details {
+    font-family: "Novecento WideBold", sans-serif;
+    background-color: rgb(255, 111, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.toggle-details:hover {
+    background-color: #ff8c00;
+}
+
+.more-details {
+    margin-top: 10px;
+    color: #555;
+}
+
+
 .videojuegos {
     width: 100%;
     height: auto;

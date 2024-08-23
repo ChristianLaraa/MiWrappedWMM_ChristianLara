@@ -72,20 +72,17 @@
                     </div>
                     <div class="gallery-item">
                         <img src="cruzz.gif" alt="Foto 3">
-                    </div>
-                
-                    <div class="chart-container">
-                        <h2>Generos</h2>
-                        <canvas id="percentageChart"></canvas>
-                    </div>
-                
-                    <div class="chart-container">
-                        <h2>Horas de consumo</h2>
-                        <canvas id="hoursChart"></canvas>
-                    </div>
-                
+                    </div>   
         </div>
-
+        <div class="chart-container">
+            <h2>Generos</h2>
+            <canvas id="percentageChart"></canvas>
+        </div>
+    
+        <div class="chart-container">
+            <h2>Horas de consumo</h2>
+            <canvas id="hoursChart"></canvas>
+        </div>
     </div>
         <div class = "Deportes">
             <h1>Deportes</h1>
@@ -108,29 +105,69 @@
             </div>
             <div class = textDep>
                 <p>En el ultimo año, practique 2 deportes: Futbol y Gym</p>
-                <p>En una semana: Juego un partido de futbol y asisto 4 días al Gym. </p>
+                <p>En una semana: Juego un partido de futbol <b>(1:30 hrs)</b> y asisto 4 días <b>(1:30 hrs)</b> al Gym. </p>
             </div>
             <div class="chart-containerDep">
                 <h2>Horas en Deportes</h2>
                 <canvas id="percentageDep"></canvas>
             </div>
             </div>
-
+        
+            
             <div class = "medios">
-                <h1>Medios de Entretenimiento Digitales</h1>
+                <h1>Medios de Entretenimiento Digitales (Streaming)</h1>
+                <h3>En el 2024, mi principal medio que consumo: (hrs-diarias)</h3>
+                <ol class="top-list">
+                    <li data-rank="1"><b>Spotify</b>  &nbsp; (4 hrs) &nbsp; ------------   &nbsp; Playlist, generos (Rap, R&B, Corridos Tumbados, Trap, Regaetón). </li>
+                    <li data-rank="2"><b>Youtube</b> &nbsp; (2 hrs) &nbsp;  ------------------- &nbsp; Podcast, Reseñas Música (Dando el roll, Creativo, Flowcast).</li>
+                    <li data-rank="2"><b>Tik Tok</b> &nbsp; (1:40 hrs) &nbsp;  ------------------- &nbsp; FyP (Algoritmo).</li>
+                    <li data-rank="3"><b>Twitch</b> &nbsp; (50 min) &nbsp; --------------- &nbsp; Streamers (El Mariana, MarioTQ).</li>
+                    <li data-rank="4"><b>Netflix</b> &nbsp; (45 min) &nbsp; --------------- &nbsp; Series (Bojack Horseman, Better Call Saul) Documentales (Kanye, Travis).</li>
+                </ol>
+                <div class="chart-containerEnt">
+                    <h2>Horas en Streaming</h2>
+                    <canvas id="percentageEntre"></canvas>
+                </div>
                 </div>
 
                 <div class = "cultura">
-                    <h1>Eventos Culturales</h1>
+                    <h1>Eventos Culturales y Formación</h1>
+                    <div class="events-container">
+                        <input type="text" id="search" placeholder="Buscar eventos...">
+                        <h2>Eventos a los que he asistido en 2024</h2>
+                        <ul id="events-list">
+                            <li>
+                                <img src="images/hov.png" alt="Evento 1" class="event-image">
+                                <h3>Semana Diabla</h3>
+                                <p><strong>Fecha:</strong> 06 de Abril del 2024</p>
+                                <p class="event-description">Breve descripción del evento 1.</p>
+                                <button class="toggle-details">Mostrar más</button>
+                                <p class="more-details" style="display: none;">Detalles adicionales sobre el evento 1.</p>
+                            </li>
+                            <li>
+                                <img src="images/hack.jpg" alt="Evento 2" class="event-image">
+                                <h3>Hackathon, IPN, Angelhack</h3>
+                                <p><strong>Fecha:</strong> 13 de Abril del 2024</p>
+                                <p class="event-description">Breve descripción del evento 2.</p>
+                                <button class="toggle-details">Mostrar más</button>
+                                <p class="more-details" style="display: none;">Detalles adicionales sobre el evento 2.</p>
+                            </li>
+                            <li>
+                                <img src="images/gamergy.png" alt="Evento 2" class="event-image">
+                                <h3>Gamergy México</h3>
+                                <p><strong>Fecha:</strong> 25 de Agosto del 2024</p>
+                                <p class="event-description">Breve descripción del evento 2.</p>
+                                <button class="toggle-details">Mostrar más</button>
+                                <p class="more-details" style="display: none;">Detalles adicionales sobre el evento 2.</p>
+                            </li>
+                        </ul>
                     </div>
+                    
 
             <div class = "videojuegos">
                 <h1>Videojuegos</h1>
             </div>
 
-            <div class = "eventosForm">
-                <h1>Eventos de Formación y Entretenimiento </h1>
-            </div>
             <div class = "resultados">
                 <h1>¡Resumen del 2024!</h1>
             </div>
