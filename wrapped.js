@@ -8,14 +8,14 @@ const percentageChart = new Chart(percentageCtx, {
             label: 'Porcentajes',
             data: [66.6, 33.3], // Estos números deben sumar 100
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
+                'rgba(15, 0, 255, 1)',
+                'rgba(255, 166, 0, 1)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
+                'rgba(255, 255, 255 1)',
+                'rgba(255, 255, 255 1)',
             ],
-            borderWidth: 1
+            borderWidth: 3
         }]
     },
     options: {
@@ -129,21 +129,67 @@ const percentageEntre = new Chart(percentageEnt, {
     data: {
         labels: ['Spotify', 'Youtube', 'Tik Tok', 'Twitch', 'Netflix'],
         datasets: [{
-            label: 'Porcentajes',
-            data: [45, 23, 15, 10, 7 ], // Estos números deben sumar 100
+            label: 'Porcentajes de Uso de Plataformas',
+            data: [45, 23, 15, 10, 7],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)'
+                'rgba(30, 215, 96, 0.8)',
+                'rgba(255, 0, 0, 0.8)',
+                'rgba(0, 242, 234, 0.8)',
+                'rgba(145, 70, 255, 0.8)',
+                'rgba(229, 9, 20, 0.8)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
+                'rgba(30, 215, 96, 1)',
+                'rgba(255, 0, 0, 1)',
+                'rgba(0, 242, 234, 1)',
+                'rgba(145, 70, 255, 1)',
+                'rgba(229, 9, 20, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2,
+            hoverBackgroundColor: [
+                'rgba(30, 215, 96, 1)',
+                'rgba(255, 0, 0, 1)',
+                'rgba(0, 242, 234, 1)',
+                'rgba(145, 70, 255, 1)',
+                'rgba(229, 9, 20, 1)'
+            ],
+            hoverBorderColor: [
+                'rgba(30, 215, 96, 1)',
+                'rgba(255, 0, 0, 1)',
+                'rgba(0, 242, 234, 1)',
+                'rgba(145, 70, 255, 1)',
+                'rgba(229, 9, 20, 1)'
+            ],
+            hoverBorderWidth: 3
         }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    color: 'rgba(0, 0, 0, 0.8)',
+                    font: {
+                        color: 'rgba(255, 255, 255, 1)',
+                        size: 14,
+                        family: 'Arial, sans-serif'
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Distribución de Uso de Plataformas de Entretenimiento',
+                color: 'rgba(0, 0, 0, 0.8)',
+                font: {
+                    size: 18,
+                    family: 'Arial, sans-serif',
+                    weight: 'bold'
+                }
+            }
+        },
+        responsive: true,
+        maintainAspectRatio: false
     },
     options: {
         responsive: true,

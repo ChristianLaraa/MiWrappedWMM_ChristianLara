@@ -1,17 +1,14 @@
 @import url('https://db.onlinewebfonts.com/c/67821e7ef9a2952d6e7757a6cae5a826?family=Novecento+WideBold');
 @import url(https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember+Regular);
 /* Reset básico */
-body, h1, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 body {
     margin: 0;
     padding: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
+    padding-top: 75px;
+    list-style: none;
 }
 
 .main-header {
@@ -24,6 +21,10 @@ body {
     padding: 20px 50px; 
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 93%;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     
@@ -41,11 +42,13 @@ body {
 
 .nav-menu ul {
     display: flex;
+    list-style: none;
     gap: 30px; /* Aumenta la separación entre los elementos del menú */
 }
 
 .nav-menu ul li a {
     text-decoration: none;
+    list-style: none;
     color: rgb(0, 0, 0);
     font-size: 0.9rem; /* Reduce el tamaño de la letra */
     font-weight: 500;
@@ -206,6 +209,19 @@ body {
 .tino b {
     color: #ffffff;
 }
+.travis {
+    align-items: center;
+}
+.travis b{
+    color: #ffffff;
+}
+.travis .gallery-item img {
+    width: 100%;
+    height: auto;
+    backdrop-filter: grayscale(0.5) opacity(0.8);
+    align-items: center;
+}
+
 .chart-container {
     padding: 0rem;
     gap: 8rem;
@@ -311,11 +327,14 @@ body {
 }
 .top-list li {
     color: #ffffff;
-    font-family: 'Amazon Ember Regular', sans-serif;
-    font-size: 1.5rem;
-    padding: 10px;
+    font-family: "Novecento WideBold";
+    font-size: 1rem;
+    padding: 20px;
     border-bottom: 1px solid #ddd;
     transition: all 0.3s ease;
+}
+.top-list li b {
+    color: rgb(223, 122, 27);
 }
 .top-list li:hover {
     background-color: rgba(255, 111, 0, 0.2); /* Usa el color de fondo del navbar */
@@ -326,7 +345,7 @@ body {
     gap: 8rem;
     margin-top: 0rem;
     margin-left: 9rem;
-    width: 300px;
+    width: 340px;
     align-items: center;
     margin: 3rem auto;
 }
@@ -338,28 +357,37 @@ body {
     margin: 40px 0;
 }
 .cultura {
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    flex-direction: column;
 }
+
 .cultura h1 {
     font-family: "Novecento WideBold", sans-serif;
     margin-top: 3rem;
     color: #ffffff;
-    align-items: center;
     text-align: center;
     font-size: 2.5rem;
 }
+
 .events-container {
-    max-width: 600px;
-    margin-top: 3rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-width: 600px;
+    margin-top: 3rem;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #000000;
 }
+
 
 .events-container h2 {
     font-family: "Novecento WideBold", sans-serif;
@@ -385,13 +413,17 @@ body {
 
 .event-image {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 5px;
+}
+.event-image:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
 }
 
 #events-list li h3 {
     margin: 10px 0 5px;
-    color: #ffffff;
+    color: rgb(223, 122, 27);
 }
 
 #events-list li p {
@@ -417,11 +449,14 @@ button.toggle-details:hover {
     margin-top: 10px;
     color: #555;
 }
-
+.banFilt {
+    backdrop-filter: grayscale(0.5) opacity(0.8);
+}
 
 .videojuegos {
     width: 100%;
     height: auto;
+    padding: 25px;
     align-items: center;
     margin-top: 5rem;
 }
@@ -433,25 +468,70 @@ button.toggle-details:hover {
     text-align: center;
     font-size: 2.5rem;
 }
-.eventosForm {
+.table-container {
+    margin-top: 3rem;
+    border: 2px solid #ff6f00;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: #ffffff;
+    font-family: "Novecento WideBold", sans-serif;
+    padding: 15px;
+    text-align: center;
+    background-color: #000000;
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    font-family: "Novecento WideBold", sans-serif;
+    text-align: center;
+    background-color: #ff6f00;
+    color: white;
+}
+
+tr:hover td {
+    background-color: rgba(255, 111, 0, 0.2); 
+    cursor: pointer;
+}
+.videojuegos h3 {
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(223, 122, 27);
+    text-align: center;
+    margin: 40px 0;
+}
+.consumRel {
+    width: 400px;
     height: auto;
     align-items: center;
-    margin-top: 5rem;
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-left: 2.2rem;
 }
-.eventosForm h1 {
-    font-family: "Novecento WideBold", sans-serif;
-    margin-top: 3rem;
-    color: #ffffff;
+.consumRel-image {
     align-items: center;
-    text-align: center;
-    font-size: 2.5rem;
+    width: auto;
+    height: 100px;
+    padding: 20px;
+}
+.consumRel-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 .resultados {
     width: 100%;
     height: auto;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .resultados h1 {
     font-family: "Novecento WideBold", sans-serif;
