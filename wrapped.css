@@ -1,5 +1,5 @@
 @import url('https://db.onlinewebfonts.com/c/67821e7ef9a2952d6e7757a6cae5a826?family=Novecento+WideBold');
-
+@import url(https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember+Regular);
 /* Reset básico */
 body, h1, ul, li {
     margin: 0;
@@ -177,7 +177,6 @@ body {
 
 .aquihay {
     width: 100%;
-    
     height: auto;
     align-items: center;
 }
@@ -207,132 +206,154 @@ body {
 .tino b {
     color: #ffffff;
 }
-.deportes {
+.chart-container {
+    padding: 0rem;
+    gap: 8rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
+    width: 300px;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.Deportes {
     width: 100%;
     height: auto;
     align-items: center;
     margin-top: 5rem;
 }
+.Deportes h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.galleryDep {
+    align-items: center;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 3rem auto;
+}
 
-
-.gallery-wrapper {
-    position: relative;
+.gallery-item-Dep {
     overflow: hidden;
-    width: 100vw;
-    height: 460px; /* Ajusta la altura según tus necesidades */
-    margin-top: 17rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-}
-
-.containerGallery {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    height: 100%;
-    margin-right: 2rem;
-}
-
-.block {
-    flex: 0 0 auto;
+    border-radius: 10px;
     position: relative;
-    width: 580px;
-    height: 460px;
-    margin: 10px 20px; /* Ajusta los márgenes según tus necesidades */
 }
 
-.block h4 {
-    position: flex;
-    font-family: "Novecento WideBold";
-    font-weight: lighter;
-    font-size: 60px;
-    color: #fff;
-    bottom: 0;
-    right: 0; /* Ajusta la posición del texto según tus necesidades */
+.gallery-item-Dep img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
 }
 
-.block-1 {
-    background: url(cruzz.gif) no-repeat 50% 50%;
-    background-size: cover;
+.gallery-item-Dep:hover img {
+    transform: scale(1.1);
+}
+.textDep {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Amazon Ember Regular', sans-serif;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.chart-containerDep {
+    padding: 0rem;
+    gap: 8rem;
+    margin-top: 0rem;
+    margin-left: 9rem;
+    width: 300px;
+    align-items: center;
+    margin: 3rem auto;
+}
+.chart-containerDep h2{
+    font-family: 'Novecento WideBold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(223, 122, 27);
+    text-align: center;
+    margin: 40px 0;
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+.medios {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+.medios h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cultura {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+.cultura h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.videojuegos {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+.videojuegos h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.eventosForm {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+.eventosForm h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.resultados {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+.resultados h1 {
+    font-family: "Novecento WideBold", sans-serif;
+    margin-top: 3rem;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
-.block-2 {
-    background: url(cruzz.gif) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.block-3 {
-    background: url(cruzz.gif) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.block-4 {
-    background: url(cruzz.gif) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.block-5 {
-    background: url(cruzzi.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    background-color: #333;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    margin-right: 2rem;
-    transition: background-color 0.3s ease;
-}
-.scroll-btn:hover {
-    background-color: #555;
-}
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    transition: border-width 0.3s ease, transform 0.3s ease;
-    
-}
-
-.arrow-left {
-    border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #fff;
-}
-
-.arrow-right {
-    border-width: 15px 25px 15px 0;
-    border-color: transparent #fff transparent transparent;
-}
-
-.scroll-btn.prev .arrow-left {
-    transform: translate(-50%, -50%) rotate(180deg);
-}
-
-.scroll-btn.next .arrow-right {
-    transform: translate(-50%, -50%) rotate(180deg);
-}
 
 @media (max-width: 768px) {
     .main-header {

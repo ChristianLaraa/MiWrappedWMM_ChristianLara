@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="wrapped.css">
     <link rel="icon" type="image/jpeg" href="wm.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Wrapped - Christian Lara</title>
 </head>
@@ -11,7 +12,7 @@
 
     <header class="main-header">
         <div class="logo">
-            <img src="wmm.png" alt="Logo de la empresa">
+            <img src="wmm.png" alt="Logo Warner Music Mexico">
         </div>
         <nav class="nav-menu">
             <ul>
@@ -27,7 +28,7 @@
         </nav>
     </header>
     <div class="container-text">
-        <img src="Chris.jpeg" alt="Foto de Christian Lara" class="profile-pic">
+        <img src="images/chris.jpeg" alt="Foto de Christian Lara" class="profile-pic">
         <div class="text-content">
             <h1><b>¡Hola!</b> Soy Christian Lara<br><b>y este es mi Wrapped 2024</b></h1>
         </div>
@@ -38,13 +39,13 @@
     <h2><ol>Cruz Cafune, <b> 9 de Marzo. </b></ol></h2>
     <section class="gallery" id="galeria">
         <div class="gallery-item">
-            <img src="cruzz.gif" alt="Foto 4">
+            <img src="images/cruzz.gif" alt="Foto 4">
         </div>
         <div class="gallery-item">
-            <img src="cruzzi.jpeg" alt="Foto 2">
+            <img src="images/cruzzi.jpeg" alt="Foto 2">
         </div>
         <div class="gallery-item">
-            <img src="memeCruz.jpeg" alt="Foto 3">
+            <img src="images/memeCruz.jpeg" alt="Foto 3">
         </div>
     </div>
         <div class="aquihay">
@@ -72,35 +73,68 @@
                     <div class="gallery-item">
                         <img src="cruzz.gif" alt="Foto 3">
                     </div>
+                
+                    <div class="chart-container">
+                        <h2>Generos</h2>
+                        <canvas id="percentageChart"></canvas>
+                    </div>
+                
+                    <div class="chart-container">
+                        <h2>Horas de consumo</h2>
+                        <canvas id="hoursChart"></canvas>
+                    </div>
+                
         </div>
-        <div class = "deportes">
+
+    </div>
+        <div class = "Deportes">
             <h1>Deportes</h1>
-            <div class="gallery-wrapper">
-                <div class="containerGallery" id="galleryContainer">
-                    <div class="block block-1">
-                        <h4>TrackList</h4>
-                    </div>
-                    <div class="block block-2">
-                        <h4>Tour</h4>
-                    </div>
-                    <div class="block block-3">
-                        <h4>Visuales</h4>
-                    </div>
-                    <div class="block block-4">
-                        <h4>Inspiración</h4>
-                    </div>
-                    <div class="block block-5">
-                        <h4>Proceso</h4>
-                    </div>
+            <div class="galleryDep">
+                <div class="gallery-item-Dep">
+                    <img src="images/dep.jpg" alt="Foto 1">
                 </div>
-                <button class="scroll-btn prev" onclick="scrollGallery(-1)">
-                    <span class="arrow-left"></span>
-                  </button>
-                  <button class="scroll-btn next" onclick="scrollGallery(1)">
-                    <span class="arrow-right"></span>
+                <div class="gallery-item-Dep">
+                    <img src="images/dep.jpg" alt="Foto 2">
+                </div>
+                <div class="gallery-item-Dep">
+                    <img src="images/dep.jpg" alt="Foto 3">
+                </div>
+                <div class="gallery-item-Dep">
+                    <img src="images/dep.jpg" alt="Foto 4">
+                </div>
+                <div class="gallery-item-Dep">
+                    <img src="images/dep.jpg" alt="Foto 5">
+                </div>
+            </div>
+            <div class = textDep>
+                <p>En el ultimo año, practique 2 deportes: Futbol y Gym</p>
+                <p>En una semana: Juego un partido de futbol y asisto 4 días al Gym. </p>
+            </div>
+            <div class="chart-containerDep">
+                <h2>Horas en Deportes</h2>
+                <canvas id="percentageDep"></canvas>
+            </div>
             </div>
 
-        </div>
+            <div class = "medios">
+                <h1>Medios de Entretenimiento Digitales</h1>
+                </div>
+
+                <div class = "cultura">
+                    <h1>Eventos Culturales</h1>
+                    </div>
+
+            <div class = "videojuegos">
+                <h1>Videojuegos</h1>
+            </div>
+
+            <div class = "eventosForm">
+                <h1>Eventos de Formación y Entretenimiento </h1>
+            </div>
+            <div class = "resultados">
+                <h1>¡Resumen del 2024!</h1>
+            </div>
+
         <!-- Añadir más fotos según sea necesario -->
     </section>
 </div> 
