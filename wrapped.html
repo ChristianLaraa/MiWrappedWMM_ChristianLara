@@ -59,7 +59,7 @@
                     <img src="images/ahaha.gif" alt="Foto 4">
                 </div>
                 <div class="gallery-item">
-                    <img src="cruzz.gif" alt="Foto 2">
+                    <img src="images/aqui.gif" alt="Foto 2">
                 </div>
                 <div class="gallery-item">
                     <img src="images/ahaha2.gif" alt="Foto 3">
@@ -160,7 +160,6 @@
                 <div class = "cultura">
                     <h1>Eventos Culturales y Formación</h1>
                     <div class="events-container">
-                        <input type="text" id="search" placeholder="Buscar eventos...">
                         <h2>Eventos a los que he asistido en 2024</h2>
                         <ul id="events-list">
                             <li>
@@ -169,7 +168,7 @@
                                 <p><strong>Fecha:</strong> 06 de Abril del 2024</p>
                                 <p class="event-description">Evento cultural relacionado con el mundo del diseño grafico e ilustración así como a la creacion y desarrollo del arte.</p>
                                 <button class="toggle-details">Mostrar más</button>
-                                <p class="more-details" style="display: none;">.</p>
+                                <p class="more-details" style="display: none;"><a href="https://www.instagram.com/p/C5Q-Q06uPhS/?img_index=1">HoV</a></p>
                             </li>
                             <li>
                                 <img src="images/hack.jpg" alt="Evento 2" class="event-image">
@@ -177,7 +176,7 @@
                                 <p><strong>Fecha:</strong> 13 de Abril del 2024</p>
                                 <p class="event-description">Evento dedicado al mundo de la tecnología, desarrollo de nuevas tecnologias y presentación de proyectos</p>
                                 <button class="toggle-details">Mostrar más</button>
-                                <p class="more-details" style="display: none;">Detalles adicionales sobre el evento 2.</p>
+                                <p class="more-details" style="display: none;"><a href="https://angelhack.com/hackglobal/mexico/">Angelhack</a></p>
                             </li>
                             <li>
                                 <img src="images/gamergy.png" alt="Evento 2" class="event-image">
@@ -193,7 +192,7 @@
                                 <p><strong>Fecha:</strong> 12 de Octubre del 2024</p>
                                 <p class="event-description">Evento dedicado al mundo de la tecnologia y desarrollo.</p>
                                 <button class="toggle-details">Mostrar más</button>
-                                <p class="more-details" style="display: none;"><a href="https://mexico.gamergy.gg/">Gamergy</a></p>
+                                <p class="more-details" style="display: none;">.</p>
                             </li>
                         </ul>
                     </div>
@@ -252,10 +251,39 @@
 <section id="Resultados">
             <div class = "resultados">
                 <h1>¡Resumen del 2024!</h1>
+                <h2>Disfruta tu Wrapped :) </h2> 
+                <h3><br>las graficas de barras, representan las veces de un suceso en los <b>meses</b> del año <br><br>Las graficas circulares representan las <b>horas de un suceso en un mes.</b></h3>
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="barrChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="secondPieChart"></canvas>
+                    </div>
+                </div>
+            
             </div>
         </section>
     </section>
 </div> 
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Gracias por ver.</h3>
+            <p>Desarrollado, diseñado y creado por: <b>Christian Lara - 2024</b> </p>
+            <p>En colaboracion con <b>Warner Music Mexico</b></p>
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="wrapped.js"></script>
 </body>
 </html>
