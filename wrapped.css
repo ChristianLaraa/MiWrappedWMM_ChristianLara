@@ -141,7 +141,7 @@ body {
 
 .conciertos h1 {
     font-family: 'Novecento WideBold', sans-serif;
-    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-size: 3rem; /* Tamaño de fuente más grande */
     margin-bottom: 25px; /* Espacio debajo del título */
 }
 
@@ -236,15 +236,15 @@ body {
     width: 100%;
     height: auto;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .Deportes h1 {
     font-family: "Novecento WideBold", sans-serif;
-    margin-top: 3rem;
+    margin-top: 5rem;
     color: #ffffff;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 .galleryDep {
     align-items: center;
@@ -273,13 +273,13 @@ body {
 }
 .textDep {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Novecento WideBold", sans-serif;
     text-align: center;
 }
 .textDep b {
     color: rgb(223, 122, 27);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Novecento WideBold", sans-serif;
     text-align: center;
 }
@@ -308,7 +308,7 @@ body {
     width: 100%;
     height: auto;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 .medios h1 {
     font-family: "Novecento WideBold", sans-serif;
@@ -316,7 +316,7 @@ body {
     color: #ffffff;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .medios h3{
     font-family: 'Novecento WideBold', sans-serif;
@@ -372,7 +372,7 @@ body {
     margin-top: 3rem;
     color: #ffffff;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .events-container {
@@ -381,7 +381,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -454,7 +454,7 @@ button.toggle-details:hover {
 }
 
 .videojuegos {
-    width: 100%;
+    width: 96%;
     height: auto;
     padding: 25px;
     align-items: center;
@@ -466,7 +466,7 @@ button.toggle-details:hover {
     color: #ffffff;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.05rem;
 }
 .table-container {
     margin-top: 3rem;
@@ -539,7 +539,7 @@ tr:hover td {
     color: #ffffff;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 

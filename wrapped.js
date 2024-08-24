@@ -8,12 +8,12 @@ const percentageChart = new Chart(percentageCtx, {
             label: 'Porcentajes',
             data: [66.6, 33.3], // Estos números deben sumar 100
             backgroundColor: [
-                'rgba(15, 0, 255, 1)',
+                'rgba(148, 238, 0, 1)',
                 'rgba(255, 166, 0, 1)',
             ],
             borderColor: [
-                'rgba(255, 255, 255 1)',
-                'rgba(255, 255, 255 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
             ],
             borderWidth: 3
         }]
@@ -50,16 +50,16 @@ const hoursChart = new Chart(hoursCtx, {
             label: 'Horas',
             data: [5, 6, 5], // Distribución de horas
             backgroundColor: [
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(6, 54, 183, 1)',
+                'rgba(247, 156, 8, 1)',
+                'rgba(240, 116, 224, 1)'
             ],
             borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 3
         }]
     },
     options: {
@@ -92,14 +92,14 @@ const percentageDep = new Chart(percentageDepor, {
             label: 'Porcentajes',
             data: [20, 80], // Estos números deben sumar 100
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 1, 47, 1)',
+                'rgba(1, 201, 255, 1)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
             ],
-            borderWidth: 1
+            borderWidth: 3
         }]
     },
     options: {
@@ -139,11 +139,11 @@ const percentageEntre = new Chart(percentageEnt, {
                 'rgba(229, 9, 20, 0.8)'
             ],
             borderColor: [
-                'rgba(30, 215, 96, 1)',
-                'rgba(255, 0, 0, 1)',
-                'rgba(0, 242, 234, 1)',
-                'rgba(145, 70, 255, 1)',
-                'rgba(229, 9, 20, 1)'
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)'
             ],
             borderWidth: 2,
             hoverBackgroundColor: [
