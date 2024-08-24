@@ -78,7 +78,14 @@ body {
     color: #ffffff;
     transform: translateY(-3px);
 }
-
+@media (max-width: 768px) {
+    .main-header {
+        display: none;
+    }
+    .nav-menu ul {
+        display: none;
+    }
+}   
 
 .container-text {
     display: flex;
@@ -511,12 +518,12 @@ tr:hover td {
     margin: 40px 0;
 }
 .consumRel {
-    width: 400px;
+    width: 100%; /* Ajusta el ancho a 100% para pantallas pequeñas */
     height: auto;
     align-items: center;
-    display: inline-flex;
+    display: flex; /* Cambia a flex para permitir mejor distribución */
+    flex-direction: column; /* Alinea los elementos en columna */
     margin-top: 1rem;
-    margin-left: 2.2rem;
 }
 .consumRel-image {
     align-items: center;
@@ -592,15 +599,101 @@ tr:hover td {
 .footer-container b{
     color: rgb(255, 255, 255);
 }
-
+/* Estilos responsivos */
 @media (max-width: 768px) {
-    .main-header {
-        flex-direction: column;
+    .container-text {
+        margin: 2rem 1rem; /* Reduce los márgenes en dispositivos más pequeños */
+        padding: 10px; /* Reduce el padding en dispositivos más pequeños */
+        max-width: 90%; /* Permite que el contenedor ocupe más espacio */
+    }
+
+    .profile-pic {
+        width: 150px; /* Reduce el tamaño de la imagen de perfil */
+        height: 150px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .conciertos h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño del título de conciertos */
+    }
+
+    .conciertos h2 {
+        font-size: 1.2rem; /* Ajusta el tamaño del subtítulo de conciertos */
+    }
+}
+/* Estilos Responsive para la tabla */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px; /* Reduce el padding para pantallas más pequeñas */
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .videojuegos h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño de la fuente del encabezado */
+    }
+
+    .videojuegos h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente del subencabezado */
+    }
+
+    .table-container {
+        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+    }
+
+    table {
+        width: 100%; /* Asegura que la tabla use el ancho completo */
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 8px; /* Reduce aún más el padding en pantallas muy pequeñas */
+        font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .videojuegos h1 {
+        font-size: 2rem; /* Reduce el tamaño del encabezado para pantallas pequeñas */
+    }
+
+    .videojuegos h3 {
+        font-size: 1rem; /* Reduce el tamaño del subencabezado para pantallas pequeñas */
+    }
+}
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 120px; /* Reduce aún más el tamaño de la imagen de perfil */
+        height: 120px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .conciertos h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título de conciertos */
+    }
+
+    .conciertos h2 {
+        font-size: 1rem; /* Ajusta el tamaño del subtítulo de conciertos */
+    }
+}
+@media (max-width: 600px) {
+    .videojuegos h1 {
+        font-size: 2.5rem; /* Reduce el tamaño de la fuente del encabezado */
     }
     
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+    .videojuegos h3 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del subencabezado */
+    }
+    
+    .table-container {
+        margin: 1rem auto; /* Ajusta el margen */
+    }
+
+    .consumRel {
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
 }
